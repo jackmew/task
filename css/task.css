@@ -1,0 +1,128 @@
+body{
+  background-image: url('../img/retina_wood.png');
+  text-align: center;
+  padding: 2%;
+}
+button {
+   margin: 0 0 2%;
+   border: 1px solid #542E19;
+   background: #a85c32;
+   background: -webkit-gradient(linear, left top, left bottom, from(#CB9D84), to(#a85c32));
+   background: -webkit-linear-gradient(top, #CB9D84, #a85c32);
+   background: -moz-linear-gradient(top, #CB9D84, #a85c32);
+   background: -ms-linear-gradient(top, #CB9D84, #a85c32);
+   background: -o-linear-gradient(top, #CB9D84, #a85c32);
+   background-image: -ms-linear-gradient(top, #CB9D84 0%, #a85c32 100%);
+   padding: 10px 20px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #542E19 0 1px 0;
+   color: #FFFFFF;
+   font-size: 14px;
+   font-family: Arial, Helvetica, Serif;
+   font-weight: normal;
+   text-decoration: none;
+   vertical-align: middle;
+}
+button:hover {
+   border: 1px solid #542E19;
+   text-shadow: #542E19 0 1px 0;
+   background: #7E4526;
+   background: -webkit-gradient(linear, left top, left bottom, from(#B97D5B), to(#7E4526));
+   background: -webkit-linear-gradient(top, #B97D5B, #7E4526);
+   background: -moz-linear-gradient(top, #B97D5B, #7E4526);
+   background: -ms-linear-gradient(top, #B97D5B, #7E4526);
+   background: -o-linear-gradient(top, #B97D5B, #7E4526);
+   background-image: -ms-linear-gradient(top, #B97D5B 0%, #7E4526 100%);
+   color: #FFFFFF;
+   text-decoration: none;
+}
+button:active {
+   text-shadow: #542E19 0 1px 0;
+   border: 1px solid #542E19;
+   background: #B97D5B;
+   background: -webkit-gradient(linear, left top, left bottom, from(#7E4526), to(#7E4526));
+   background: -webkit-linear-gradient(top, #7E4526, #B97D5B);
+   background: -moz-linear-gradient(top, #7E4526, #B97D5B);
+   background: -ms-linear-gradient(top, #7E4526, #B97D5B);
+   background: -o-linear-gradient(top, #7E4526, #B97D5B);
+   background-image: -ms-linear-gradient(top, #7E4526 0%, #B97D5B 100%);
+   color: #FFFFFF;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p{
+  font-family: "Helvetica Neue", arial, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 1em;
+}
+
+p:last-child{
+  margin-bottom: 0;
+}
+
+.container{
+  text-align: justify;
+  /*font-size: 0;*/
+}
+
+.container:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.container .item,
+.container .gap{
+  display: inline-block;
+  width: 49%;
+}
+
+.container .mix{
+  text-align: left;
+
+  margin-bottom: 2%;
+  padding: 2%;
+  vertical-align: top;
+  display: none;
+  
+  -webkit-backface-visibility: hidden;
+
+  border-radius: 20px;
+  /*box-shadow: 2px 3px 3px black,-2px 3px 3px black;*/
+  box-shadow: inset 0px 0px 10px 0px #361300;
+  
+}
+
+/* Flex box progressive enhancements: */
+
+.container{
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+	-webkit-justify-content: space-between;
+  -webkit-align-content: flex-start;
+}
+
+@media screen and (min-width: 600px){
+  .container .mix,
+  .container .gap{
+    width: 32%;
+  }
+}
+@media all and (max-width: 600px){
+  .container .mix,
+  .container .gap{
+    padding: 5%;
+  }
+}
